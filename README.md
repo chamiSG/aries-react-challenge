@@ -1,30 +1,50 @@
-# React + TypeScript + Vite
+# Options Strategy Risk & Reward Analyzer | Aries React Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+This project is a front-end application designed to visualize the risk and reward of options strategies. It allows users to input up to four options contracts and generates a corresponding risk & reward graph. This tool also calculates and displays the maximum profit, maximum loss, and all break-even points based on the options contracts provided.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Graphical Analysis**: Displays a risk & reward graph plotting the potential profit or loss across a range of underlying prices at expiration.
 
-- Configure the top-level `parserOptions` property like this:
+- **Calculation of Metrics**: Automatically calculates and displays the maximum profit, maximum loss, and break-even points.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Technologies Used
+- **React**: A JavaScript library for building user interfaces.
+- **TypeScript**: A strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.
+- **Tailwind CSS**: A utility-first CSS framework for rapidly building custom designs.
+- **Vite**: A modern frontend build tool that provides a faster and leaner development experience.
+- **React-ApexCharts**: A React wrapper for ApexCharts to build interactive visualizations.
+
+## Project Setup
+Follow these instructions to set up and run the project locally:
+
+#### Prerequisites
+- Node.js (preferably version 18.x or higher)
+- npm (usually comes with Node.js)
+
+#### Installation
+- Clone the repository:
+
+```bash
+git clone git@github.com:chamiSG/aries-react-challenge.git
+cd aries-react-challenge
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Install dependencies:
+
+```bash
+yarn install
+```
+- Run the development server:
+
+```bash
+yarn dev
+```
+This command starts the local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+
+## Usage
+To use the application, navigate to the web interface (usually at http://localhost:5173 when running locally). The graph and calculated metrics will update automatically based on the data provided.
+
+Project Live Link: [https://aries-react-challenge-blush.vercel.app/](https://aries-react-challenge-blush.vercel.app/)
